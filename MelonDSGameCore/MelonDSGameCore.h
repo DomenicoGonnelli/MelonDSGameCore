@@ -1,5 +1,5 @@
 //
-//  MelonDSDeltaCore.h
+//  MelonDSGameCore.h
 //  MelonDSDeltaCore
 //
 //  Created by Riley Testut on 10/15/19.
@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for MelonDSDeltaCore.
+//! Project version number for MelonDSGameCore.
 FOUNDATION_EXPORT double MelonDSDeltaCoreVersionNumber;
 
-//! Project version string for MelonDSDeltaCore.
+//! Project version string for MelonDSGameCore.
 FOUNDATION_EXPORT const unsigned char MelonDSDeltaCoreVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import MelonDSGameCore/PublicHeader.h>

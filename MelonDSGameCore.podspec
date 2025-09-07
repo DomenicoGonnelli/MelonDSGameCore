@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
     
   spec.xcconfig = {
     "HEADER_SEARCH_PATHS" => '"${PODS_CONFIGURATION_BUILD_DIR}" "$(PODS_ROOT)/Headers/Private/MelonDSGameCore/melonDS/src" "$(PODS_ROOT)/Headers/Private/MelonDSGameCore/melonDS/src/frontend/libslirp"',
-    "USER_HEADER_SEARCH_PATHS" => '"${PODS_CONFIGURATION_BUILD_DIR}/DeltaCore/Swift Compatibility Header" "$(PODS_ROOT)/Headers/Private/MelonDSGameCore/melonDS/src/teakra/include" "$(PODS_ROOT)/Headers/Private/MelonDSGameCore/melonDS/src/frontend"',
+    "USER_HEADER_SEARCH_PATHS" => '"${PODS_CONFIGURATION_BUILD_DIR}/GameCore/Swift Compatibility Header" "$(PODS_ROOT)/Headers/Private/MelonDSGameCore/melonDS/src/teakra/include" "$(PODS_ROOT)/Headers/Private/MelonDSGameCore/melonDS/src/frontend"',
     "GCC_PREPROCESSOR_DEFINITIONS" => "STATIC_LIBRARY=1 _NETINET_TCP_VAR_H_ MELONDS_VERSION=" "\\" "\"0.9.5" "\\" "\"",
     "GCC_OPTIMIZATION_LEVEL" => "fast",
     "CLANG_CXX_LANGUAGE_STANDARD" => "c++17"
