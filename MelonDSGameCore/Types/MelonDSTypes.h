@@ -2,7 +2,7 @@
 //  MelonDSTypes.h
 //  MelonDSDeltaCore
 //
-//  Created by Riley Testut on 4/2/20.
+//  Created by Darlion on 4/2/20.
 //  Copyright © 2020 Riley Testut. All rights reserved.
 //
 

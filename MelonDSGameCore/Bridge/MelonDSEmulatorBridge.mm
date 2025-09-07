@@ -2,7 +2,7 @@
 //  MelonDSEmulatorBridge.m
 //  MelonDSDeltaCore
 //
-//  Created by Riley Testut on 10/31/19.
+//  Created by Darlion on 10/31/19.
 //  Copyright © 2019 Riley Testut. All rights reserved.
 //
 
