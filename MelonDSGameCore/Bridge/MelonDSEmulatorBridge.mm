@@ -10,14 +10,14 @@
 
 #import <UIKit/UIKit.h> // Prevent undeclared symbols in below headers
 
-#import <DeltaCore/DeltaCore.h>
-#import <DeltaCore/DeltaCore-Swift.h>
+#import <GameCore/GameCore.h>
+#import <GameCore/GameCore-Swift.h>
 
 #if STATIC_LIBRARY
-#import "MelonDSDeltaCore-Swift.h"
+#import "MelonDSGameCore-Swift.h"
 #import "MelonDSTypes.h"
 #else
-#import <MelonDSDeltaCore/MelonDSDeltaCore-Swift.h>
+#import MelonDSGameCore/MelonDSGameCore-Swift.h>
 #endif
 
 #include "melonDS/src/Platform.h"

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BF02B28224366DDF001B4E65"
-               BuildableName = "libMelonDS.a"
-               BlueprintName = "libMelonDS"
-               ReferencedContainer = "container:MelonDSDeltaCore.xcodeproj">
+               BlueprintIdentifier = "BF7317842356624000774F10"
+               BuildableName = "MelonDSGameCore.framework"
+               BlueprintName = "MelonDSGameCore"
+               ReferencedContainer = "container:MelonDSGameCore.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,10 +50,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BF02B28224366DDF001B4E65"
-            BuildableName = "libMelonDS.a"
-            BlueprintName = "libMelonDS"
-            ReferencedContainer = "container:MelonDSDeltaCore.xcodeproj">
+            BlueprintIdentifier = "BF7317842356624000774F10"
+            BuildableName = "MelonDSGameCore.framework"
+            BlueprintName = "MelonDSGameCore"
+            ReferencedContainer = "container:MelonDSGameCore.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

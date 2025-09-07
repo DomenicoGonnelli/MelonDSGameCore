@@ -9,7 +9,7 @@
 import Foundation
 import AVFoundation
 
-import DeltaCore
+import GameCore
 
 #if !STATIC_LIBRARY
 public extension GameType

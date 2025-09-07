@@ -46,8 +46,8 @@
 		BF062AB5254370050010FF6D /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = BF062AB4254370050010FF6D /* aes.c */; };
 		BF062ABA2543708E0010FF6D /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF062AB82543708E0010FF6D /* Config.cpp */; };
 		BF38C9EF2494133F005AFA8D /* Standard.deltamapping in Resources */ = {isa = PBXBuildFile; fileRef = BF38C9EE2494133F005AFA8D /* Standard.deltamapping */; };
-		BF39AFDF2534D2B500800781 /* Standard.deltaskin in Resources */ = {isa = PBXBuildFile; fileRef = BF39AFDE2534D2B500800781 /* Standard.deltaskin */; };
-		BF73178A2356624000774F10 /* MelonDSDeltaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BF7317882356624000774F10 /* MelonDSDeltaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF39AFDF2534D2B500800781 /* Standard.dgskin in Resources */ = {isa = PBXBuildFile; fileRef = BF39AFDE2534D2B500800781 /* Standard.dgskin */; };
+		BF73178A2356624000774F10 /* MelonDSGameCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BF7317882356624000774F10 /* MelonDSGameCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF74CC622553756B00060964 /* ARMJIT_LoadStore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF74CC5C2553756B00060964 /* ARMJIT_LoadStore.cpp */; };
 		BF74CC632553756B00060964 /* ARMJIT_Linkage.s in Sources */ = {isa = PBXBuildFile; fileRef = BF74CC5D2553756B00060964 /* ARMJIT_Linkage.s */; };
 		BF74CC642553756B00060964 /* ARMJIT_ALU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF74CC5E2553756B00060964 /* ARMJIT_ALU.cpp */; };
@@ -234,9 +234,9 @@
 		BF062AB82543708E0010FF6D /* Config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Config.cpp; path = melonDS/src/frontend/qt_sdl/Config.cpp; sourceTree = SOURCE_ROOT; };
 		BF062AB92543708E0010FF6D /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = melonDS/src/frontend/qt_sdl/Config.h; sourceTree = SOURCE_ROOT; };
 		BF38C9EE2494133F005AFA8D /* Standard.deltamapping */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Standard.deltamapping; sourceTree = "<group>"; };
-		BF39AFDE2534D2B500800781 /* Standard.deltaskin */ = {isa = PBXFileReference; lastKnownFileType = file; name = Standard.deltaskin; path = "Controller Skin/Standard.deltaskin"; sourceTree = "<group>"; };
-		BF7317852356624000774F10 /* MelonDSDeltaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MelonDSDeltaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF7317882356624000774F10 /* MelonDSDeltaCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MelonDSDeltaCore.h; sourceTree = "<group>"; };
+		BF39AFDE2534D2B500800781 /* Standard.dgskin */ = {isa = PBXFileReference; lastKnownFileType = text; name = Standard.dgskin; path = "Controller Skin/Standard.dgskin"; sourceTree = "<group>"; };
+		BF7317852356624000774F10 /* MelonDSGameCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MelonDSGameCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7317882356624000774F10 /* MelonDSGameCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MelonDSGameCore.h; sourceTree = "<group>"; };
 		BF7317892356624000774F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF74CC5C2553756B00060964 /* ARMJIT_LoadStore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ARMJIT_LoadStore.cpp; path = melonDS/src/ARMJIT_A64/ARMJIT_LoadStore.cpp; sourceTree = SOURCE_ROOT; };
 		BF74CC5D2553756B00060964 /* ARMJIT_Linkage.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = ARMJIT_Linkage.s; path = melonDS/src/ARMJIT_A64/ARMJIT_Linkage.s; sourceTree = SOURCE_ROOT; };
@@ -521,7 +521,7 @@
 			isa = PBXGroup;
 			children = (
 				BF7317892356624000774F10 /* Info.plist */,
-				BF39AFDE2534D2B500800781 /* Standard.deltaskin */,
+				BF39AFDE2534D2B500800781 /* Standard.dgskin */,
 				BF38C9EE2494133F005AFA8D /* Standard.deltamapping */,
 			);
 			name = "Supporting Files";
@@ -557,7 +557,7 @@
 		BF73177B2356624000774F10 = {
 			isa = PBXGroup;
 			children = (
-				BF7317872356624000774F10 /* MelonDSDeltaCore */,
+				BF7317872356624000774F10 /* MelonDSGameCore */,
 				BF02B28424366DDF001B4E65 /* libMelonDS */,
 				D5B44BF02E29A71400EA8B6C /* Dependencies */,
 				BF7317862356624000774F10 /* Products */,
@@ -568,23 +568,23 @@
 		BF7317862356624000774F10 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BF7317852356624000774F10 /* MelonDSDeltaCore.framework */,
+				BF7317852356624000774F10 /* MelonDSGameCore.framework */,
 				BF02B28324366DDF001B4E65 /* libMelonDS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BF7317872356624000774F10 /* MelonDSDeltaCore */ = {
+		BF7317872356624000774F10 /* MelonDSGameCore */ = {
 			isa = PBXGroup;
 			children = (
-				BF7317882356624000774F10 /* MelonDSDeltaCore.h */,
+				BF7317882356624000774F10 /* MelonDSGameCore.h */,
 				BF02B2EC24367486001B4E65 /* MelonDS.swift */,
 				BF02B2FB24367CE7001B4E65 /* Types */,
 				BF02B2FA24367CCA001B4E65 /* Bridge */,
 				D54FDB242E26D3D9003B4D8A /* libMelonDS */,
 				BF02B30724368320001B4E65 /* Supporting Files */,
 			);
-			path = MelonDSDeltaCore;
+			path = MelonDSGameCore;
 			sourceTree = "<group>";
 		};
 		BF74CC5B2553754700060964 /* ARMJIT_A64 */ = {
@@ -818,7 +818,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF73178A2356624000774F10 /* MelonDSDeltaCore.h in Headers */,
+				BF73178A2356624000774F10 /* MelonDSGameCore.h in Headers */,
 				BF02B2F0243674AF001B4E65 /* MelonDSEmulatorBridge.h in Headers */,
 				BF02B2FE24367CF5001B4E65 /* MelonDSTypes.h in Headers */,
 			);
@@ -844,9 +844,9 @@
 			productReference = BF02B28324366DDF001B4E65 /* libMelonDS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		BF7317842356624000774F10 /* MelonDSDeltaCore */ = {
+		BF7317842356624000774F10 /* MelonDSGameCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF73178D2356624000774F10 /* Build configuration list for PBXNativeTarget "MelonDSDeltaCore" */;
+			buildConfigurationList = BF73178D2356624000774F10 /* Build configuration list for PBXNativeTarget "MelonDSGameCore" */;
 			buildPhases = (
 				BF7317802356624000774F10 /* Headers */,
 				BF7317812356624000774F10 /* Sources */,
@@ -859,9 +859,9 @@
 				D5B44C072E29A78300EA8B6C /* PBXTargetDependency */,
 				BF02B2F924367A74001B4E65 /* PBXTargetDependency */,
 			);
-			name = MelonDSDeltaCore;
+			name = MelonDSGameCore;
 			productName = MelonDSDeltaCore;
-			productReference = BF7317852356624000774F10 /* MelonDSDeltaCore.framework */;
+			productReference = BF7317852356624000774F10 /* MelonDSGameCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -883,7 +883,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BF73177F2356624000774F10 /* Build configuration list for PBXProject "MelonDSDeltaCore" */;
+			buildConfigurationList = BF73177F2356624000774F10 /* Build configuration list for PBXProject "MelonDSGameCore" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -902,7 +902,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				BF7317842356624000774F10 /* MelonDSDeltaCore */,
+				BF7317842356624000774F10 /* MelonDSGameCore */,
 				BF02B28224366DDF001B4E65 /* libMelonDS */,
 			);
 		};
@@ -924,7 +924,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF38C9EF2494133F005AFA8D /* Standard.deltamapping in Resources */,
-				BF39AFDF2534D2B500800781 /* Standard.deltaskin in Resources */,
+				BF39AFDF2534D2B500800781 /* Standard.dgskin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1248,7 +1248,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6XVY5G3U44;
+				DEVELOPMENT_TEAM = S797C2F3U5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1256,14 +1256,14 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MelonDSDeltaCore/Info.plist;
+				INFOPLIST_FILE = MelonDSGameCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.MelonDSDeltaCore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.domenico.gonnelli.core.ds;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -1285,18 +1285,18 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6XVY5G3U44;
+				DEVELOPMENT_TEAM = S797C2F3U5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MelonDSDeltaCore/Info.plist;
+				INFOPLIST_FILE = MelonDSGameCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.MelonDSDeltaCore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.domenico.gonnelli.core.ds;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -1322,7 +1322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF73177F2356624000774F10 /* Build configuration list for PBXProject "MelonDSDeltaCore" */ = {
+		BF73177F2356624000774F10 /* Build configuration list for PBXProject "MelonDSGameCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF73178B2356624000774F10 /* Debug */,
@@ -1331,7 +1331,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF73178D2356624000774F10 /* Build configuration list for PBXNativeTarget "MelonDSDeltaCore" */ = {
+		BF73178D2356624000774F10 /* Build configuration list for PBXNativeTarget "MelonDSGameCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF73178E2356624000774F10 /* Debug */,
