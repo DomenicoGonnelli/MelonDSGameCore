@@ -45,7 +45,7 @@
 		BF062AB025436F440010FF6D /* DSi_I2C.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF062AA525436F440010FF6D /* DSi_I2C.cpp */; };
 		BF062AB5254370050010FF6D /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = BF062AB4254370050010FF6D /* aes.c */; };
 		BF062ABA2543708E0010FF6D /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF062AB82543708E0010FF6D /* Config.cpp */; };
-		BF38C9EF2494133F005AFA8D /* Standard.deltamapping in Resources */ = {isa = PBXBuildFile; fileRef = BF38C9EE2494133F005AFA8D /* Standard.deltamapping */; };
+		BF38C9EF2494133F005AFA8D /* Standard.dgmapping in Resources */ = {isa = PBXBuildFile; fileRef = BF38C9EE2494133F005AFA8D /* Standard.dgmapping */; };
 		BF39AFDF2534D2B500800781 /* Standard.dgskin in Resources */ = {isa = PBXBuildFile; fileRef = BF39AFDE2534D2B500800781 /* Standard.dgskin */; };
 		BF73178A2356624000774F10 /* MelonDSGameCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BF7317882356624000774F10 /* MelonDSGameCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF74CC622553756B00060964 /* ARMJIT_LoadStore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF74CC5C2553756B00060964 /* ARMJIT_LoadStore.cpp */; };
@@ -233,7 +233,7 @@
 		BF062AB4254370050010FF6D /* aes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = aes.c; path = "melonDS/src/tiny-AES-c/aes.c"; sourceTree = SOURCE_ROOT; };
 		BF062AB82543708E0010FF6D /* Config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Config.cpp; path = melonDS/src/frontend/qt_sdl/Config.cpp; sourceTree = SOURCE_ROOT; };
 		BF062AB92543708E0010FF6D /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = melonDS/src/frontend/qt_sdl/Config.h; sourceTree = SOURCE_ROOT; };
-		BF38C9EE2494133F005AFA8D /* Standard.deltamapping */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Standard.deltamapping; sourceTree = "<group>"; };
+		BF38C9EE2494133F005AFA8D /* Standard.dgmapping */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Standard.dgmapping; sourceTree = "<group>"; };
 		BF39AFDE2534D2B500800781 /* Standard.dgskin */ = {isa = PBXFileReference; lastKnownFileType = text; name = Standard.dgskin; path = "Controller Skin/Standard.dgskin"; sourceTree = "<group>"; };
 		BF7317852356624000774F10 /* MelonDSGameCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MelonDSGameCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7317882356624000774F10 /* MelonDSGameCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MelonDSGameCore.h; sourceTree = "<group>"; };
@@ -522,7 +522,7 @@
 			children = (
 				BF7317892356624000774F10 /* Info.plist */,
 				BF39AFDE2534D2B500800781 /* Standard.dgskin */,
-				BF38C9EE2494133F005AFA8D /* Standard.deltamapping */,
+				BF38C9EE2494133F005AFA8D /* Standard.dgmapping */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -923,7 +923,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF38C9EF2494133F005AFA8D /* Standard.deltamapping in Resources */,
+				BF38C9EF2494133F005AFA8D /* Standard.dgmapping in Resources */,
 				BF39AFDF2534D2B500800781 /* Standard.dgskin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
