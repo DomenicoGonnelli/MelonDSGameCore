@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.public_header_files = "MelonDSGameCore/Types/MelonDSTypes.h", "MelonDSGameCore/Bridge/MelonDSEmulatorBridge.h", "MelonDSGameCore/MelonDSGameCore.h"
   spec.header_mappings_dir = ""
   spec.resource_bundles = {
-    "melonDS" => ["MelonDSGameCore/**/*.deltamapping", "MelonDSGameCore/**/*.dgskin"]
+    "melonDS" => ["MelonDSGameCore/**/*.dgmapping", "MelonDSGameCore/**/*.dgskin"]
   }
   
   spec.dependency 'GameCore'
