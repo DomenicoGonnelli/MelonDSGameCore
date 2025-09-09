@@ -90,6 +90,9 @@ public struct MelonDS: DeltaCoreProtocol
     private init()
     {
     }
+    
+    public var skinName: String { "Standard" }
+    public var mappingName: String { "Standard" }
 }
 
 // Expose DeltaCore properties to Objective-C.
